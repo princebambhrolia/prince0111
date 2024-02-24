@@ -5,7 +5,6 @@ int isLeapYear(int year) {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
-
 void printLeapYearsBetween(int startYear, int endYear) {
     while (startYear <= endYear) {
         if (isLeapYear(startYear)) {
@@ -23,9 +22,7 @@ int main() {
     scanf("%d", &firstYear);
 
     printf("Enter the second number (year): ");
-    scanf("%d", &secondYear);
-
-    
+    scanf("%d", &secondYear);    
     printf("Leap years between %d and %d:\n", firstYear, secondYear);
     printLeapYearsBetween(firstYear, secondYear);
 
